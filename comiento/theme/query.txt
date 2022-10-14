@@ -1,0 +1,43 @@
+1. create daabase table 
+  - admin_master
+    id(pk)
+name(varchare)
+email(varchare)
+phone(int)
+password(varchare)
+created_date(datetime)
+
+
+2. Login
+
+login form validation
+
+query - select * from admin_master where email='' and password=''
+
+if(data is exist){
+redirect dashboard 
+}else{
+show error message on login screen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE `comiento`.`admin_master` ( `id` INT(50) NOT NULL AUTO_INCREMENT , `name` VARCHAR(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `phone` INT(13) NOT NULL , `password` VARCHAR(50) NOT NULL , `created_date` DATETIME(6) NOT NULL , PRIMARY KEY (`id`(100))) ENGINE = InnoDB;

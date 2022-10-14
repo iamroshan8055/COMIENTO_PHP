@@ -1,0 +1,70 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+
+a
+{
+	position: absolute;
+	top: 80%;
+	left: 25%;
+	transform: translate(-70%,-65%);
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	line-height: 10px;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400px;
+	border-radius: 30px;
+	z-index: 1;
+}
+
+a:hover 
+{
+	animation: animate 8s linear infinite;
+	text-decoration: none;
+
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+
+a:before 
+{
+	text-decoration: none;
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	z-index: -1;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400px;
+	border-radius: 40px;
+	opacity: 0;
+	transition: 0.5s;
+}
+a:hover:before 
+{
+	text-decoration: none;
+	filter: blur(20px);
+	opacity: 1;
+	animation: animate 8s linear infinite;
+}
